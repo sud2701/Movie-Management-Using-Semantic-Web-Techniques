@@ -1,0 +1,9 @@
+<div style="text-align:center">
+  <h1>
+    Movie Recommendation System
+  </h1>
+</div>
+
+<div [ngStyle] = "{ 'padding-left' : currentRoute === '/login' ? '37.5%' : '0%', 'padding-top' : currentRoute === '/login' ? '5%' : '0%' }">
+  <router-outlet></router-outlet>
+</div>

@@ -1,0 +1,93 @@
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+::ng-deep svg {
+    /* background-color: lightgray; */
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+  }
+
+  ::ng-deep svg:not(.active):not(.ctrl) {
+    cursor: crosshair;
+  }
+
+  ::ng-deep path.link {
+    fill: none;
+    stroke: #000;
+    stroke-width: 4px;
+    cursor: default;
+  }
+
+  ::ng-deep svg:not(.active):not(.ctrl) path.link {
+    cursor: pointer;
+  }
+
+  ::ng-deep path.link.selected {
+    stroke-dasharray: 10,2;
+  }
+
+  ::ng-deep path.link.dragline {
+    pointer-events: none;
+  }
+
+  ::ng-deep path.link.hidden {
+    stroke-width: 0;
+  }
+
+  ::ng-deep circle.node {
+    stroke-width: 1.5px;
+    cursor: pointer;
+  }
+
+  ::ng-deep circle.node.reflexive {
+    stroke: #000 !important;
+    stroke-width: 2.5px;
+  }
+
+  ::ng-deep text {
+    font: 12px sans-serif;
+    pointer-events: none;
+  }
+
+  ::ng-deep text.id {
+    text-anchor: middle;
+    font-weight: bold;
+  }
+
+  ::ng-deep circle.node.collapsed{
+    stroke: #333;
+    stroke-width: 5px;
+    stroke-dasharray: 4,5;
+  }
+
+.float-container{
+  /* padding : 20px; */
+  display: flex;
+}
+
+.float-child {
+  /* padding : 20px; */
+  flex: 1;
+  /* border: 2px solid yellow; */
+}
+
+.row-parent{
+  padding : 5px;
+  display: flex;
+  flex-direction: column;
+}
+
+.row-child{
+  flex : 1;
+}
+
+.appClass{
+  padding-top: 5%;
+  padding-left: 37%;
+  margin: auto;
+  align-items: center;
+  align-content: center;
+}

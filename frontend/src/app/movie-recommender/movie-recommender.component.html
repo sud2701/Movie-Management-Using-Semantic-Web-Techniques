@@ -1,0 +1,134 @@
+<div style="margin-left: 42%;">
+  <mat-slide-toggle [checked]="type==='and' ? true : false" (change)="changeAndOr($event)"></mat-slide-toggle> Including
+  {{ type === 'and' ? 'all' : 'any'}} filters. (Toggle for {{ type === 'and' ? 'any' : 'all'}}).
+</div>
+<br />
+
+<div class="float-container">
+
+  <div class='float-child'>
+    <div class="row-parent">
+      <mat-checkbox class="row-child" [(ngModel)]="actorNameChbox" name="actorNameChbox"
+        (ngModelChange)="checkUncheck('actorName', actorNameChbox)">Actor name</mat-checkbox>
+      <mat-form-field class="row-child">
+        <mat-label>Actor</mat-label>
+        <input matInput name="actorName" placeholder="Enter Actor name" [(ngModel)]="actorName"
+          [disabled]="!actorNameChbox" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class='float-child'>
+    <div class="row-parent">
+      <mat-checkbox class="row-child" [(ngModel)]="writerNameChbox" name="writerNameChbox"
+        (ngModelChange)="checkUncheck('writerName', writerNameChbox)">Writer name</mat-checkbox>
+      <mat-form-field class="row-child">
+        <mat-label>Writer</mat-label>
+        <input matInput name="writerName" placeholder="Enter writer name" [(ngModel)]="writerName"
+          [disabled]="!writerNameChbox" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class='float-child'>
+    <div class="row-parent">
+      <mat-checkbox class="row-child" [(ngModel)]="directorChbox" name="directorChbox"
+        (ngModelChange)="checkUncheck('director', directorChbox)">Director name</mat-checkbox>
+      <mat-form-field class="row-child">
+        <mat-label>Director</mat-label>
+        <input matInput name="director" placeholder="Enter director name" [(ngModel)]="director"
+          [disabled]="!directorChbox" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class='float-child'>
+    <div class="row-parent">
+      <mat-checkbox class="row-child" [(ngModel)]="ratingChbox" name="ratingChbox"
+        (ngModelChange)="checkUncheck('selectedRating', ratingChbox)">Rating</mat-checkbox>
+      <mat-form-field class="row-child">
+        <mat-label>Rating</mat-label>
+        <input matInput name="ratings" type="number" min="0" max="10" placeholder="Enter ratings"
+          [(ngModel)]="selectedRating" [disabled]="!ratingChbox" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class='float-child'>
+    <div class="row-parent">
+      <mat-checkbox class="row-child" [(ngModel)]="movieNameChbox" name="movieNameChbox"
+        (ngModelChange)="checkUncheck('movieName', movieNameChbox)">Movie name</mat-checkbox>
+      <mat-form-field class="row-child">
+        <mat-label>Movie name</mat-label>
+        <input matInput name="movierName" placeholder="Enter movie name" [(ngModel)]="movieName"
+          [disabled]="!movieNameChbox" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class='float-child'>
+    <div class="row-parent">
+      <mat-checkbox class="row-child" [(ngModel)]="producerChbox" name="producerChbox"
+        (ngModelChange)="checkUncheck('producerName', producerChbox)">Producer name</mat-checkbox>
+      <mat-form-field class="row-child">
+        <mat-label>Producer name</mat-label>
+        <input matInput name="producerName" placeholder="Enter producer name" [(ngModel)]="producerName"
+          [disabled]="!producerChbox" />
+      </mat-form-field>
+    </div>
+  </div>
+
+  <div class='float-child'>
+    <div class="row-parent">
+      <mat-checkbox class="row-child" [(ngModel)]="genreChbox" name="genreChbox"
+        (ngModelChange)="checkUncheck('genres', genreChbox)">
+        Genre</mat-checkbox>
+      <mat-form-field appearance="fill" class="row-child">
+        <mat-label>Genres</mat-label>
+        <mat-select [(ngModel)]="genres" name="selectionGenre" multiple [disabled]="!genreChbox">
+          <mat-option *ngFor="let genre of genreList" [value]="genre">{{genre}}</mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+  </div>
+
+</div>
+
+<div style="position: relative; left : 37%">
+  <button mat-raised-button color="primary" (click)="backendCall()"
+    [disabled]="(!actorNameChbox || actorName === '') && (!writerNameChbox || writerName === '') && (!ratingChbox || selectedRating === null || selectedRating === undefined || selectedRating > 10 || selectedRating < 0 ) && (!directorChbox || director === '') && (!movieNameChbox || movieName === '') && (!producerChbox || producerName === '') && (!genreChbox || !genres.length)">Apply
+    Filters
+  </button>
+
+  <button mat-raised-button color="primary" (click)="logOut()" style="margin-left: 3%;">Log out</button>
+</div>
+
+<br />
+<ng-container [style.display]="filtersApplied ? '' : 'none'">
+
+  <svg id="graphContainer" style="float:left" [attr.width]=" movieClicked ? '70%' : '100%'" height="100%"
+    class="associations " #graphContainer overflow="">
+  </svg>
+
+  <div *ngIf="movieClicked"
+    style="width: 29%; height: 100%; float: right; padding: 5px; border: 2px solid black; background-color: #eeeeee">
+    <div *ngFor="let prop of clickedMovieDetails | keyvalue">
+      <ng-container
+        *ngIf="['title', 'genres', 'votes', 'rating', 'year', 'runtime', 'Actors', 'Directors', 'Writers', 'Producers', 'Your review'].includes(prop.key) && prop.value">
+        {{prop.key}} = {{prop.value}}
+      </ng-container>
+      <ng-container *ngIf="['Reviews'].includes(prop.key)">
+        {{prop.key}} :
+        <ul>
+          <li *ngFor=" let person of clickedMovieDetails.Reviews | keyvalue"> {{person.key}} - [
+            {{person.value.Summary}} , {{person.value.Rating}} {{person.value.Sentiment ? ', ' + person.value.Sentiment
+            : ''}} ] </li>
+        </ul>
+      </ng-container>
+    </div>
+    <br />
+    <input [(ngModel)]="newGivenRating" name="givenRating" type="text" [disabled]="ratingGiven" />
+    <button style="margin-left: 5px;" (click)="uploadRating()" [disabled]="ratingGiven">Upload rating</button>
+  </div>
+
+</ng-container>

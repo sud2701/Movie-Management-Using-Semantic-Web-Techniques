@@ -1,0 +1,434 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#"
+     xml:base="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:moviex="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasGenre -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasGenre">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Genre"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasMovieID -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasMovieID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#MovieID"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasPrimaryTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasPrimaryTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasTitle"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#primaryTitle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#primaryTitle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Rating"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Rating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRuntime -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRuntime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#RunTime"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSecondaryTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSecondaryTitle">
+        <rdfs:subPropertyOf rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasTitle"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#secondaryTitle"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#secondaryTitle"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSummary -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSummary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasTitle -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasVotes -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasVotes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#NumberOfVotes"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#releasedIn -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#releasedIn">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#ReleaseYear"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasCategory -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasCategory">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Genre"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#MovieID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasNumVotes -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasNumVotes">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#NumberOfVotes"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasPrimaryTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasPrimaryTitle">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#primaryTitle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRating -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRating">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSecondaryTitle -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSecondaryTitle">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#secondaryTitle"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasTime -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasTime">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#RunTime"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#ReleaseYear"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#isAdult -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#isAdult">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Genre -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Genre">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasCategory"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Movie">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#releasedIn"/>
+                <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:minQualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#ReleaseYear"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasGenre"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Genre"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasMovieID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#MovieID"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasPrimaryTitle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#primaryTitle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRating"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Rating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRuntime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#RunTime"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSecondaryTitle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#secondaryTitle"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasVotes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#NumberOfVotes"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#isAdult"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#MovieID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#MovieID">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#NumberOfVotes -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#NumberOfVotes">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasNumVotes"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#Rating">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRating"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#ReleaseYear -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#ReleaseYear">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#RunTime -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#RunTime">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasTime"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#primaryTitle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#primaryTitle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasPrimaryTitle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#secondaryTitle -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#secondaryTitle">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSecondaryTitle"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointProperties"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasGenre"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasMovieID"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasPrimaryTitle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRating"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasRuntime"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSecondaryTitle"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasSummary"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#hasVotes"/>
+            <rdf:Description rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-22#releasedIn"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

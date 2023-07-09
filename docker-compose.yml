@@ -1,0 +1,100 @@
+version: '2.1'
+
+networks:
+  microservice:
+    driver: bridge
+
+services:
+  fuseki:
+    image: secoresearch/fuseki
+    environment:
+      - ADMIN_PASSWORD=admin123
+    volumes:
+      - ./backend/fuseki:/fuseki-base
+    ports:
+      - "3030:3030"
+    networks:
+      - microservice
+  rabbitmq:
+    image: 'rabbitmq:3-management-alpine'
+    container_name: 'rabbitmq'
+    volumes:
+      - ~/.docker-conf/rabbitmq/data/:/var/lib/rabbitmq/
+      - ~/.docker-conf/rabbitmq/log/:/var/log/rabbitmq
+    ports:
+      - '5672:5672'
+      - '15672:15672'
+    networks:
+      - microservice
+  mongodb:
+    image: mongo
+    container_name: mongodb
+    environment:
+      - PUID=1000
+      - PGID=1000
+    volumes:
+      - ./backend/mongodb/database:/data/db
+    ports:
+      - 27016:27017
+    restart: unless-stopped
+    networks:
+      - microservice
+  api-gateway:
+    build:
+      context: ./backend
+      dockerfile: ./api-gateway/Dockerfile
+    container_name: api-gateway
+    ports:
+      - "3000:3000"
+    networks:
+      - microservice
+  user:
+    build:
+      context: ./backend
+      dockerfile: ./user/Dockerfile
+    container_name: user
+    ports:
+      - "8080:8080"
+    networks:
+      - microservice
+    depends_on:
+      - mongodb
+      - rabbitmq
+    restart: on-failure
+  movie:
+    build:
+      context: ./backend
+      dockerfile: ./movie-recommender/Dockerfile
+    container_name: movie
+    ports:
+      - "8081:8081"
+    depends_on:
+      - mongodb
+      - rabbitmq
+    networks:
+      - microservice
+    restart: on-failure
+  mailer:
+    build:
+      context: ./backend
+      dockerfile: ./mailer-service/Dockerfile
+    container_name: mailer
+    depends_on:
+      - mongodb
+      - rabbitmq
+    networks:
+      - microservice
+    restart: on-failure
+  frontend:
+    build:
+      context: .
+      dockerfile: ./frontend/Dockerfile
+    container_name: frontend
+    ports:
+      - "8002:4200"
+    volumes:
+      - ./frontend:/frontend
+      - ./frontend/node_modules:/frontend/node_modules
+    networks:
+      - microservice
+    restart: on-failure

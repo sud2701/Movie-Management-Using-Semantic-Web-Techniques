@@ -1,0 +1,637 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#"
+     xml:base="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasRating -->
+
+    <owl:ObjectProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasRating">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <rdfs:range rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasDetail -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasDetail">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasMovieName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasMovieName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasRatingValue -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasRatingValue">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasReviewID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasReviewID">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasReviewerName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasReviewerName">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasSpoilerTag -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasSpoilerTag">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasSummary -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasSummary">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasRatingValue"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasRating"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onClass rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasDetail"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasMovieName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasReviewID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasSpoilerTag"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#hasSummary"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5159745 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5159745">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best Joker adaption ever, everything dark you&apos;d want from such a character and I smiled throughout! Well worth every penny. Perfect amount of madness and incredible soundtrack. I don&apos;t even have complaints I am very satisfied - I absolutely love the profoundness in it. Joaquin Phoenix and Health Ledger are the best Jokers we&apos;ll have. I really hope this get nominated for the Oscars I&apos;d dance a wild jig! Also this is my 550th review which is really cool!</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Â∞è‰∏ë </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5159745</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">UniqueParticle</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Masterpiece especially in IMAX - The audience applauded!</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5166461 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5166461">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Brilliant JOKER played by brilliant actor! This time DC beat Marvel! Minimum one oscar!</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Â∞è‰∏ë </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5166461</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">hearthstone-78877</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">One of the best movie i&apos;ve ever seen!</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5169155 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5169155">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#9"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">As I am writing this, Joker has a 9,0 IMDB rating from around 150 000 userratings, and a 58 metascore rating. I honestly believe that this is due to critics not wanting to be seen recommending a &quot;terrorism-motivating&quot; movie, because the audience is clearly in the right here.I gave this a clear 10/10 because it simply deserves it. The score was breathtaking and the directing was amazing, especially considering he is someone with a background in mostly adult comedy movies. The cinematography was also very good. And then, the acting. I want to go as far as saying it is the best performance I have ever seen on the big screen (though, keep in mind, I don&apos;t go to the movietheatre THAT frequently).Go see this movie. It is probably tied with Endgame on movie of the year for me.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Â∞è‰∏ë </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5169155</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">audunystgaard</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Another time when critics are in the wrong and the audience is in the right.</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5171011 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5171011">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I never wanted this movie, I think many Batman and DC fans don&apos;t . I almost walked away from my local theatre , not wanting answers, the mystery is more fun. To me Heath ledgers joker is brilliant ......But I braved it.......No offence to Heath , but......</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Â∞è‰∏ë </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5171011</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">cpocall-coc</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Can I watch A Joker origin?</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5929953 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5929953">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Must watch it&apos;s nice movie
+Best acting,best movie ,best is everything ok</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5929953</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sachinraj-86107</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Super movie</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5930086 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5930086">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The way Sushant Singh Rajput has portrayed hai character , took me to Rajesh Khanna dialogue when he said life should not be long it should be big. It will definitely realise the importance of life and how you should live it. It will make you happy and cry at the same time. It&apos;s his last movie and he was a great star tremendous potential to rule the bollywood. Rest in peace Sushant Singh Rajput.
+Definitely there was a fault in the stars.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5930086</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">sagarblama</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best movie so far of this year</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5931105 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5931105">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I am still crying. I really miss you alot. I always followed you and your path. I always had a dream that I will chat with you on Instagram but har sapne sach nahi hote!!
+Best Movie, Best Acting, Best Actors...
+Sanjana and Vaid, you both were awesome.
+Thanks for this Movie...</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5931105</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">venkateswarnayak-08528</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">It&apos;s not &quot;SERI&quot;, Sushant!!</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5931695 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5931695">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I wasn&apos;t his fan. But after watching his Movie Chichore, He made fan. What a story n acting of all star cast. I hope he ll live better life than dis in his next life journey</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5931695</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">imskr007</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best Performance by Sushant singh Rajput</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5931953 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5931953">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Sushant is fresh,bright and magnetic loved it !!! Can&apos;t believe will not be able to see him again .I hope you get peace whereever you are</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5931953</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">riya-65383</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Love it!!!!</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5932890 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5932890">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The movie is truly a final eulogy for Sushant. The last 20 minutes resonates with you like anything. Its definitely a hard watch. The movie has truly managed to make him alive in our hearts forever. may you find your peace Sushant. RIP.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5932890</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">crashingsarvesh</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">SUSHANT FOREVER</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5933641 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5933641">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">&quot;A star can never die. It just turns into a smile and melts back into the cosmic music, the dance of life.&quot;Sushanth ..Ur smile is like a twinkling starüíùüíùIt&apos;s immortal ..So as this movie...üëè.seeing u in screen made me emotional...Love forever üòòüòò</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5933641</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">lolodelolo</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Stars that shines forever....</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5934985 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5934985">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Best and Fantastic Movie full of Love and Emotions.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5934985</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mchandni-94986</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tribute to SSR</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5937934 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5937934">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fabulous. Must watched movie. Sushant U will be missed.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5937934</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">vedant-49519</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Awesome</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5938553 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw5938553">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I admire you for your acting skills. Dil Bechara truly touched our hearts. I wish you you stayed.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dil Bechara </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw5938553</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">priyankalivewithme</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Can&apos;t love you enough</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6385954 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6385954">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#6"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Throughout the movie there weren&apos;t many moments where I&apos;d go &apos;wow&apos;. It was pretty anti-climatic. Gal Gadot&apos;s gorgeous but her acting is pretty bland. The scenes where she reencountered and parted ways with her love interest are just so stiff. Chris Pine did all the work, I felt.And don&apos;t get me started on the fighting scenes. The way she would swing in the air is just so CGI-packed and gives off unprofessionally edited vibes.However, towards the end, the fighting scenes got much better. That&apos;s a plus. But the main villain was also bland as hell. He was definitely intentionally portrayed to imitate Trump. The supporting villain definitely took over the show for me.It was a good and entertaining watch. Is it up there with the other superheroes I have watched? No.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6385954</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">duongthanhvan</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The fighting scenes looked fake as hell but the ending kind of saved it for me</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6405900 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6405900">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#2"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2 stars 1 for rating 1 for cast
+The makeup, CGI and story are horrible!
+Did DC run out of money?
+So many lame moments and pointless plots. All that slow build up for that ending.
+Spare your self from losing 2.5 hours of life.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6405900</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">april_2270</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">What did I just watch</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6407679 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6407679">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#6"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">This is not comparable to the first film, but I would say there are valiant messages being made in a poorly written film. Interesting that in the first film WW confronts the God of War during WWI and in the second film confronts the tyranny of an unloved boy as an adult embodying a caricature of a positive thinking guru. Think about that. I respect Patty Jenkins and I hoped that she would have put her talent into a script where our 21st century WW did find a way to have her powers and her man. To me, that old story still woven into this was the greatest disappointment. Gal Gadot is breathtaking. The 80s references are entertaining and nostalgic. Chris Pine is adorable. Kristen Wigg breaks into a whole new role and does it splendidly. All of them deserved a better script.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6407679</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">jennifergoodson</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The war on positive thinking</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6409926 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6409926">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#7"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I would give this movie a solid 7/10. I don&apos;t know why there has been so much hate for this movie. Was it as good as the first movie. Well the answer to that is no. They changed up the formula but they shouldn&apos;t have. I hope they are paying attention to what the people are saying, and if there is another movie they go back to what made the first movie so good. Regardless this was not a awful movie.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6409926</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">boggie4758</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Why all the hate...</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6410971 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6410971">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#6"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I was looking for a fun, popcorn-type flick, in the same vein as Shazam! or Aquaman, as a nice way to end this trainwreck of a year, but, instead, I got a so-&apos;n-so jumbled mess. It is not as bad as some other reviews on here make it seem, in my opinion, it has some decent action, great acting, an intresting-ish (if not highly predictable and, downright, stupid, at times) plot. The bad, sort of, suffocates the good in this, though. I jokingly predicted what was going to happen, only to have that which I predicted on screen moments later, that tacky wind blowing whenever a wish is made, the horrible for 2020 CGI on Cheetah (which isn&apos;t quite as bad as Cats, but just manages to remind you of it), the stupid &quot;I woke up in a different body&quot; explanation to why Steve is brought back, I&apos;m pretty sure Wonder Woman&apos;s overly preachy speech at the end was done in a last minute reshoot, like 2 weeks ago, among many, many other things, just scratch the surface of amount of problems present in this movie. On the positive side of things, the acting is top-notch, although I feel the roles and script don&apos;t do Kristen Wiig (who, i feel, plays a character similar to Jim Carrey&apos;s Riddler and Jamie Foxx&apos;s Electro here) and Pedro Pascal any favors, Diana&apos;s character development, I feel was really strong here (it goes a bit against cannon, though, but it wasn&apos;t a problem for me), the relationship between Diana and Steve and the reversal of the fish-out-of-water dynamic from the first one were welcomed and enjoyable. The desert action sequence, as I&apos;ve been calling it, I feel was the highlight of the movie, as far as action goes. The third act battle, while not bad, and certainly an improvement over the battle from the first movie, was a bit harder to take seriously, because I was constantly thinking Wonder Woman was fighting that Taylor Swift cat that introduced the Idris Elba cat in (obviously) Cats, and I couldn&apos;t stop making that connection. I know that in interviews, Patty Jenkins stated that the movie was actually supposed to make you feel like you were actually watching a movie made in 1984, but I don&apos;t know if, stylistically, it was the best choice, especially after the opening sequence on Themyscira, when the aspect ratio suddenly changes on us and the footage looks like it came from some weird time vortex. I get that that was supposed to be the feeling it conveyed, but to me, it was just the tiniest bit jarring, and it took quite a while to get used to it. All in all, it&apos;s kind of a mixed bag... I can&apos;t say I hate it, but I didn&apos;t fall head-over-heals in love with it, as the current climate probably dictates that I should, it just left me a bit empty. It was just... ok.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6410971</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">andytudy</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not great, just ok.</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6426715 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6426715">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#8"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Well, as far as movies go, this wasn&apos;t that bad. Incoherent plot, i suppose, made this movie less favourable than the 2017 Wonder Woman. Pedro Pascal was amazing. There was a scene of Star Wars v Star Trek, if you know what i mean. Anyway, it wasn&apos;t a great nor a bad movie. Heard Hans Zimmer&apos;s Batman v Superman martha theme. That was surprising and loved it.
+My Rating : 7.4</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6426715</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">marveller-66</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Hmm.</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6437732 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6437732">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#3"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Two good things about this movie: Pedro Pascal, and the surprise end credits appearance. Other than that, not really worth watching.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6437732</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">dlegume</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Surprisingly Awful</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6438285 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6438285">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#7"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Superhero films are generally mindless and this was no exception. Agree that the plot line and writing were not up to the mark but made for an entertaining evening nonetheless.</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6438285</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">mukund-483-285169</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Not that bad</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6439745 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6439745">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">The score is 5.5 because of a bunch of narcissistic patriarchs! I am a feminist! The opening is so great! I only lament there wasn&apos;t a World War II version</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6439745</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">MaxKwok</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Uplifting year end movie that we must have</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6452909 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#rw6452909">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Review"/>
+        <hasRating rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#1"/>
+        <hasDetail rdf:datatype="http://www.w3.org/2001/XMLSchema#string">I&apos;ve decided to sign in for this movie. It was so bad. I lasted whole 10 minutes. Even my kids were bored and I was jist disgusted. I can&apos;t believe that such a bad movie is alloud to release. There shouldnbe some commission cancelling such a pointless brain washing peace of ...</hasDetail>
+        <hasMovieName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Wonder Woman 1984 </hasMovieName>
+        <hasReviewID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">rw6452909</hasReviewID>
+        <hasReviewerName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">obiektywny</hasReviewerName>
+        <hasSpoilerTag rdf:datatype="http://www.w3.org/2001/XMLSchema#string">0</hasSpoilerTag>
+        <hasSummary rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Total brain wash</hasSummary>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#1 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#1">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1</hasRatingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#10">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">10</hasRatingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#2 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#2">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2</hasRatingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#3 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#3">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">3</hasRatingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#6 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#6">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">6</hasRatingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#7 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#7">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">7</hasRatingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#8 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#8">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">8</hasRatingValue>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#9 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#9">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-23#Rating"/>
+        <hasRatingValue rdf:datatype="http://www.w3.org/2001/XMLSchema#string">9</hasRatingValue>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

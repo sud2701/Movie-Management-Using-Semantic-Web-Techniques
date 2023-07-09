@@ -1,0 +1,667 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#"
+     xml:base="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasBirthYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasBirthYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasDeathYear -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasDeathYear">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasMovieID -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasMovieID">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasPrimaryName -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasPrimaryName">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasProf -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasProf">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#knownFor -->
+
+    <owl:DatatypeProperty rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#knownFor">
+        <rdfs:domain rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasBirthYear"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasPrimaryName"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#knownFor"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+        <owl:disjointWith rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+    </owl:Class>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID -->
+
+    <owl:Class rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID">
+        <rdfs:subClassOf>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#hasMovieID"/>
+                <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>
+                <owl:onDataRange rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+            </owl:Restriction>
+        </rdfs:subClassOf>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0000647 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0000647">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1937</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm0000647</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Alan Smithee</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,actor,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt4591238,tt2076794,tt0118577,tt0096875</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0022858 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0022858">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1958</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm0022858</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mustafa Altioklar</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">writer,director,producer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0363852,tt0272142,tt0149601,tt5762212</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0240054 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0240054">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1932</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm0240054</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">James Glenn Dudelson</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">producer,director,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt3053228,tt0119705,tt0108730,tt0129687</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0350674 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0350674">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1947</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm0350674</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">György Gát</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">producer,director,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0830861,tt0195443,tt0108767,tt0122824</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0678389 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0678389">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1923</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm0678389</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fyodor Petrukhin</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,writer,actor</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10463488,tt0183555,tt0099431,tt1435484</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0862605 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm0862605">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1939</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2021</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm0862605</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Kartal Tibet</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,actor,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0274931,tt0253738,tt0252361,tt0253616</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm1258628 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm1258628">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1948</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">2018</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm1258628</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mesut Taner</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">assistant_director,director,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0960709,tt14635264,tt1977055,tt6448596</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm1258724 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm1258724">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1974</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm1258724</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">János Uzsák</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">animation_department,director,art_department</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0100912,tt0137226,tt3062866,tt0335350</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm1699658 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm1699658">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1960</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm1699658</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Taner Akvardar</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,assistant_director,producer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0953989,tt6363168,tt0421393,tt0421513</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm1845037 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm1845037">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1965</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm1845037</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Bill Cowell</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">producer,writer,director</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt2991768,tt0451109,tt0466941,tt1785296</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2395188 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2395188">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1895</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1938</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2395188</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Ryszard Biske</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,producer,production_designer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0863138,tt1042225,tt1038992,tt1158884</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2522293 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2522293">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1941</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2522293</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Gérard Ortvin</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0938645</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2619744 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2619744">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1901</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2619744</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Fred Ashman</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,producer,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt2462682,tt1008023,tt3670304,tt3670262</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2620778 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2620778">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1874</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2620778</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Shô Tsukikawa</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,writer,editor</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1010400,tt14202642,tt2051842,tt2380035</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2622983 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2622983">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1999</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2622983</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Yûko Watanabe</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">writer,director,editor</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1028548,tt1666776,tt1942910,tt3154258</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2651586 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2651586">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1980</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2651586</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Naoki Katô</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">writer,director,producer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1028548,tt4756774,tt2111255,tt1727250</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2653914 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2653914">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1942</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2653914</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Mikio Ohkado</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1028548,tt3164782</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2668410 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2668410">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1953</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2668410</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Adam Augustynowicz</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,writer,art_director</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1042225,tt1042305</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2680989 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm2680989">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1884</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm2680989</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Michele Lunella</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">production_manager,director,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0499192,tt1042560,tt1047512,tt5825974</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm3153264 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm3153264">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1977</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm3153264</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Moses</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,editor,cinematographer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt14774398,tt10477858,tt7059352,tt9425000</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm4054920 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm4054920">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1941</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm4054920</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Jose Figueroa</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,writer,producer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1964416,tt1806920,tt10110872,tt1807020</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm4341114 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm4341114">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1982</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm4341114</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Dustin Ferguson</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,editor,producer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10078904,tt7008310,tt12680102,tt12430040</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm5662493 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm5662493">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1928</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm5662493</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Doga Can Anafarta</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">director,writer,editor</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10263320,tt6559642,tt7526338,tt8941422</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm6935209 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm6935209">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1931</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm6935209</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">Tony Newton</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">producer,director,writer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt4490348,tt6172572,tt12467358,tt4225092</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm8442307 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#nm8442307">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#DirectorID"/>
+        <hasBirthYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">1959</hasBirthYear>
+        <hasDeathYear rdf:datatype="http://www.w3.org/2001/XMLSchema#string">-1</hasDeathYear>
+        <hasID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">nm8442307</hasID>
+        <hasPrimaryName rdf:datatype="http://www.w3.org/2001/XMLSchema#string">John Ward</hasPrimaryName>
+        <hasProf rdf:datatype="http://www.w3.org/2001/XMLSchema#string">actor,director,producer</hasProf>
+        <knownFor rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt13133486,tt7243454,tt10698588,tt7664772</knownFor>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0808240 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0808240">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0808240</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0830861 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0830861">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0830861</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0831390 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0831390">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0831390</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0884106 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0884106">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0884106</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0938645 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0938645">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0938645</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0953989 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0953989">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0953989</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0960709 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt0960709">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt0960709</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10078206 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10078206">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10078206</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10078904 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10078904">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10078904</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt1008023 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt1008023">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1008023</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10110872 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10110872">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10110872</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10263320 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10263320">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10263320</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt1028548 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt1028548">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1028548</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt1042225 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt1042225">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1042225</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10463488 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10463488">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10463488</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt1047512 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt1047512">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt1047512</hasMovieID>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10602008 -->
+
+    <owl:NamedIndividual rdf:about="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#tt10602008">
+        <rdf:type rdf:resource="http://www.semanticweb.org/sudheer2701/ontologies/2022/10/untitled-ontology-24#MovieID"/>
+        <hasMovieID rdf:datatype="http://www.w3.org/2001/XMLSchema#string">tt10602008</hasMovieID>
+    </owl:NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
